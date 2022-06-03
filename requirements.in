@@ -1,0 +1,7 @@
+jupyterlab
+sqlalchemy
+pandas
+faker
+aiosqlite
+psycopg2-binary
+aiopg
