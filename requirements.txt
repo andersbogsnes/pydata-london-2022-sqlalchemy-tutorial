@@ -4,15 +4,11 @@
 #
 #    pip-compile
 #
---index-url https://artifactory.itcm.oneadr.net/api/pypi/pypi-remote/simple
---extra-index-url https://artifactory.itcm.oneadr.net/api/pypi/pypi-local/simple
---trusted-host artifactory.itcm.oneadr.net
-
 aiopg==1.3.3
     # via -r requirements.in
 aiosqlite==0.17.0
     # via -r requirements.in
-anyio==3.5.0
+anyio==3.6.1
     # via jupyter-server
 argon2-cffi==21.3.0
     # via
@@ -26,22 +22,20 @@ async-timeout==4.0.2
     # via aiopg
 attrs==21.4.0
     # via jsonschema
-babel==2.9.1
+babel==2.10.1
     # via jupyterlab-server
 backcall==0.2.0
     # via ipython
-beautifulsoup4==4.10.0
+beautifulsoup4==4.11.1
     # via nbconvert
-bleach==4.1.0
+bleach==5.0.0
     # via nbconvert
-certifi==2021.10.8
+certifi==2022.5.18.1
     # via requests
 cffi==1.15.0
     # via argon2-cffi-bindings
 charset-normalizer==2.0.12
     # via requests
-colorama==0.4.4
-    # via ipython
 debugpy==1.6.0
     # via ipykernel
 decorator==5.1.1
@@ -51,21 +45,24 @@ defusedxml==0.7.1
 entrypoints==0.4
     # via
     #   jupyter-client
-    #   jupyterlab-server
     #   nbconvert
 executing==0.8.3
     # via stack-data
-faker==13.3.4
+faker==13.12.0
     # via -r requirements.in
+fastjsonschema==2.15.3
+    # via nbformat
 greenlet==1.1.2
     # via sqlalchemy
 idna==3.3
     # via
     #   anyio
     #   requests
-ipykernel==6.11.0
+importlib-metadata==4.11.4
+    # via jupyterlab-server
+ipykernel==6.13.0
     # via notebook
-ipython==8.2.0
+ipython==8.4.0
     # via
     #   ipykernel
     #   jupyterlab
@@ -73,26 +70,26 @@ ipython-genutils==0.2.0
     # via notebook
 jedi==0.18.1
     # via ipython
-jinja2==3.1.1
+jinja2==3.1.2
     # via
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
     #   notebook
-json5==0.9.6
+json5==0.9.8
     # via jupyterlab-server
-jsonschema==4.4.0
+jsonschema==4.6.0
     # via
     #   jupyterlab-server
     #   nbformat
-jupyter-client==7.2.1
+jupyter-client==7.3.1
     # via
     #   ipykernel
     #   jupyter-server
     #   nbclient
     #   notebook
-jupyter-core==4.9.2
+jupyter-core==4.10.0
     # via
     #   jupyter-client
     #   jupyter-server
@@ -100,17 +97,17 @@ jupyter-core==4.9.2
     #   nbconvert
     #   nbformat
     #   notebook
-jupyter-server==1.16.0
+jupyter-server==1.17.0
     # via
     #   jupyterlab
     #   jupyterlab-server
     #   nbclassic
     #   notebook-shim
-jupyterlab==3.3.2
+jupyterlab==3.4.2
     # via -r requirements.in
-jupyterlab-pygments==0.1.2
+jupyterlab-pygments==0.2.2
     # via nbconvert
-jupyterlab-server==2.12.0
+jupyterlab-server==2.14.0
     # via jupyterlab
 markupsafe==2.1.1
     # via
@@ -124,66 +121,72 @@ mistune==0.8.4
     # via nbconvert
 nbclassic==0.3.7
     # via jupyterlab
-nbclient==0.5.13
+nbclient==0.6.4
     # via nbconvert
-nbconvert==6.4.5
+nbconvert==6.5.0
     # via
     #   jupyter-server
     #   notebook
-nbformat==5.2.0
+nbformat==5.4.0
     # via
     #   jupyter-server
     #   nbclient
     #   nbconvert
     #   notebook
-nest-asyncio==1.5.4
+nest-asyncio==1.5.5
     # via
     #   ipykernel
     #   jupyter-client
     #   nbclient
     #   notebook
-notebook==6.4.10
+notebook==6.4.11
     # via nbclassic
 notebook-shim==0.1.0
     # via nbclassic
-numpy==1.22.3
+numpy==1.22.4
     # via pandas
 packaging==21.3
     # via
-    #   bleach
+    #   ipykernel
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
-pandas==1.4.1
+    #   nbconvert
+pandas==1.4.2
     # via -r requirements.in
 pandocfilters==1.5.0
     # via nbconvert
 parso==0.8.3
     # via jedi
+pexpect==4.8.0
+    # via ipython
 pickleshare==0.7.5
     # via ipython
-prometheus-client==0.13.1
+prometheus-client==0.14.1
     # via
     #   jupyter-server
     #   notebook
-prompt-toolkit==3.0.28
+prompt-toolkit==3.0.29
     # via ipython
-psutil==5.9.0
+psutil==5.9.1
     # via ipykernel
 psycopg2-binary==2.9.3
     # via
     #   -r requirements.in
     #   aiopg
+ptyprocess==0.7.0
+    # via
+    #   pexpect
+    #   terminado
 pure-eval==0.2.2
     # via stack-data
 pycparser==2.21
     # via cffi
-pygments==2.11.2
+pygments==2.12.0
     # via
     #   ipython
-    #   jupyterlab-pygments
     #   nbconvert
-pyparsing==3.0.7
+pyparsing==3.0.9
     # via packaging
 pyrsistent==0.18.1
     # via jsonschema
@@ -196,13 +199,7 @@ pytz==2022.1
     # via
     #   babel
     #   pandas
-pywin32==303
-    # via jupyter-core
-pywinpty==2.0.5
-    # via
-    #   jupyter-server
-    #   terminado
-pyzmq==22.3.0
+pyzmq==23.1.0
     # via
     #   jupyter-client
     #   jupyter-server
@@ -220,17 +217,17 @@ six==1.16.0
     #   python-dateutil
 sniffio==1.2.0
     # via anyio
-soupsieve==2.3.1
+soupsieve==2.3.2.post1
     # via beautifulsoup4
-sqlalchemy==1.4.34
+sqlalchemy==1.4.37
     # via -r requirements.in
 stack-data==0.2.0
     # via ipython
-terminado==0.13.3
+terminado==0.15.0
     # via
     #   jupyter-server
     #   notebook
-testpath==0.6.0
+tinycss2==1.1.1
     # via nbconvert
 tornado==6.1
     # via
@@ -240,7 +237,7 @@ tornado==6.1
     #   jupyterlab
     #   notebook
     #   terminado
-traitlets==5.1.1
+traitlets==5.2.2.post1
     # via
     #   ipykernel
     #   ipython
@@ -252,16 +249,20 @@ traitlets==5.1.1
     #   nbconvert
     #   nbformat
     #   notebook
-typing-extensions==4.1.1
+typing-extensions==4.2.0
     # via aiosqlite
 urllib3==1.26.9
     # via requests
 wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
-    # via bleach
+    # via
+    #   bleach
+    #   tinycss2
 websocket-client==1.3.2
     # via jupyter-server
+zipp==3.8.0
+    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
