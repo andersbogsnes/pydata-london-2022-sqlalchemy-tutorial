@@ -7,6 +7,4 @@ dependencies:
   - jupyterlab
   - sqlalchemy
   - pandas
-  - aiosqlite
   - psycopg2
-  - aiopg
