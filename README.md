@@ -4,15 +4,29 @@ Are you writing SQL strings in your code? Have you only used ORMs and want to st
 control over your SQL?
 
 SQLAlchemy is the gold-standard for working with SQL in Python and this tutorial will get you 
-comfortable with working in it so you can take advantage of its power. 
+comfortable working in it, so you can take advantage of its power. 
 
-W will go through Core and ORM abstractions so you'll be comfortable navigating through the 
+We will go through Core and ORM abstractions, so you'll be comfortable navigating through the 
 different layers and be able to fully use the power of Python when writing your SQL
 
 # Project setup
 
 If you have your own, preferred setup for installing packages - go right ahead and use that. 
 There's a requirements.txt and an environment.yml file you can use. 
+Alternatively, if you have `docker` and `docker compose` installed, you can use the provided 
+`docker-compose` setup
+
+## Docker compose
+```bash
+docker compose up -d
+docker compose logs jupyter
+```
+
+In the logs you should see a URL that looks similar to 
+
+`http://127.0.0.1:8888/lab?token=39ec5120ee84b090487a822b991269732a264629c894803e`
+
+Copy-paste that into your browser, you should be able to login to the Jupyter instance
 
 ## Conda-based
 
@@ -57,3 +71,5 @@ You'll then need to install the packages
 ```bash
 python -m pip install -r requirements.txt
 ```
+
+After you've installed the packages run `jupyter lab` to start the Jupyter lab server
