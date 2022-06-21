@@ -18,8 +18,8 @@ Alternatively, if you have `docker` and `docker compose` installed, you can use 
 
 ## Docker compose
 ```bash
-docker compose up -d
-docker compose logs jupyter
+docker-compose up -d
+docker-compose logs jupyter
 ```
 
 In the logs you should see a URL that looks similar to 
